@@ -1,0 +1,372 @@
+/*
+Theme Name: Minimous
+Theme URI: http://www.webtatic.com/projects/minimous/
+Description: A clean and sleek personal blog theme, supporting header-navigation, sidebar and footer widgets.
+Version: 1.0.5
+Author: Andrew Thompson
+Author URI: http://www.webtatic.com/
+Tags: white, one-column, right-sidebar, fixed-width
+
+*/
+
+/*
+* License: GNU GPL
+* Copyright (c) 2009 Andrew Thompson
+*/
+
+html, body {
+	font-family: Arial,Helvetica,sans-serif;
+	text-align: center;
+	color: #424037;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #BC7134;
+}
+
+#content, #sidebar {
+	overflow: hidden;
+}
+
+#content p {
+	line-height: 2em;
+	margin: 30px 0;
+}
+
+#content table {
+	margin: 15px 1px;
+	border-collapse: collapse;
+}
+
+#content ul {
+	list-style: none;
+}
+
+#content ol {
+	list-style-position: inside;
+}
+
+img {
+	border: 0;
+}
+
+#page {
+	margin: 0 auto;
+	width: 900px;
+	text-align: left;
+}
+
+#content.noleftcolumn {
+	padding-left: 155px;
+	width: 505px;
+}
+
+#content a:hover, #sidebar a:hover, #header_nav a:hover {
+	text-decoration: underline;
+}
+
+#page-inner {
+	overflow:hidden;
+}
+
+#header {
+	margin-top: 8px;
+	margin-left: 155px;
+	margin-bottom: 60px;
+}
+
+#header .description {
+}
+
+#header_nav {
+	margin-bottom: 50px;
+	font-size: 12px;
+	text-align: right;
+	overflow: hidden;
+}
+
+#header_nav h2, #footer h2 {
+	display: none;
+}
+
+#header_nav ul.menu {
+	float: right;
+}
+
+#footer {
+	clear: left;
+	margin-left: 155px;
+	margin-bottom: 30px;
+	font-size: 12px;
+}
+
+ul.menu {
+	overflow:hidden;
+}
+
+ul.menu, ul.menu ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+ul.menu ul ul {
+	display: none;
+}
+
+ul.menu li {
+	float: left;
+	padding: 0 5px;
+	border-left: 1px solid #999;
+}
+
+ul.menu li:first-child {
+	border: 0;
+}
+
+ul.menu li li:first-child {
+	padding-left: 0;
+}
+
+ul.menu li li:last-child {
+	padding-right: 0;
+}
+
+.current_page_item a {
+	color: #424039;
+}
+
+.current_page_item li a {
+	color: #BC7134;
+}
+
+#header h1 {
+	margin-bottom: 5px;
+}
+
+#header h1 a {
+	color: #999;
+}
+
+#header h1 a:hover {
+	color: #ccc;
+}
+
+div.post, div.page, div.attachment {
+	margin-bottom: 80px;
+}
+
+#content {
+	float: left;
+	margin-right: 60px;
+	width: 660px;
+	font-size: 12px;
+}
+
+#content h2 a {
+	color: #444;
+}
+
+#content h2 {
+	font-size: 22px;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+#content h2 a:hover {
+	text-decoration: none;
+}
+
+#content h2 a:hover {
+	color: #999;
+}
+
+.post .date, .page .date, .attachment .date, .comment .date {
+	float: left;
+	width: 130px;
+	text-align: right;
+	color: #c6c1a5;
+	font-size: 14px;
+	padding-top: 7px;
+}
+
+.post .post-inner, .page .post-inner, .attachment .post-inner {
+	margin-left: 130px;
+	padding-left: 25px;
+}
+
+#back_to_blog {
+	margin-top: 30px;
+	font-size: 12px;
+}
+
+#sidebar {
+	float: left;
+	width: 175px;
+	font-size: 12px;
+	color: #999;
+	margin-bottom: 80px;
+}
+
+#sidebar p {
+	line-height: 1.3em;
+	margin: 5px 0;
+}
+
+#sidebar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#sidebar h2 {
+	font-size: 18px;
+	color: #444;
+}
+
+#sidebar ul ul li {
+	margin-bottom: 5px;
+}
+
+#sidebar ul ul ul {
+	margin-top: 3px;
+	margin-left: 20px;
+}
+
+.entry {
+	overflow: hidden;
+}
+
+.entry ul li:before, #sidebar ul ul li:before {
+	content: "\00BB \0020";
+}
+
+.entry ul.menu li:before {
+	content: "";
+}
+
+.commentlist {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.comment {
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+.comment .date {
+	padding: 0;
+}
+
+#content .comment p {
+	margin: 10px 0;
+}
+
+.comment div.avatar {
+	float: left;
+	clear: left;
+	text-align: right;
+	width: 130px;
+	margin-top: 10px;
+}
+
+.comment .reply {
+	margin-bottom: 20px;
+}
+
+.comment .children {
+	margin-top: 20px;
+}
+
+#comments {
+	margin-left: 130px;
+	padding-left: 25px;
+}
+
+.comment-inner {
+	margin-left: 130px;
+	padding-left: 25px;
+}
+
+#commentform {
+	width: 95%;
+}
+
+#commentform textarea {
+	width: 100%;
+	height: 100px;
+	border: 1px solid #ccc;
+}
+
+#respond {
+	margin-left: 130px;
+	padding-left: 25px;
+}
+
+.pagenavigation {
+	margin-left: 155px;
+	margin-bottom: 80px;
+	overflow: hidden;
+}
+
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+}
+
+img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption-dd {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
